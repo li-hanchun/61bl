@@ -33,7 +33,7 @@ public class MinHeapPQ<T> implements PriorityQueue<T> {
        PRIORITYVALUE. Assume the items in the MinHeapPQ are all unique. If ITEM
        is not in the MinHeapPQ, throw a NoSuchElementException. */
     public void changePriority(T item, double priorityValue) {
-        // TODO: YOUR CODE HERE
+        // TODO: OPTIONAL
     }
 
     /* Returns the number of items in the MinHeapPQ. */
