@@ -61,7 +61,7 @@ public class Graph {
 
     /* Returns a list of the vertices that lie on the shortest path from start to stop. 
     If no such path exists, you should return an empty list. If START == STOP, returns a List with START. */
-    public List<Integer> shortestPath(int start, int stop) {
+    public ArrayList<Integer> shortestPath(int start, int stop) {
         // TODO: YOUR CODE HERE
         return null;
     }
