@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Graph implements Iterable<Integer> {
+public class Graph {
 
     private LinkedList<Edge>[] adjLists;
     private int vertexCount;
