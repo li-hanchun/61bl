@@ -9,7 +9,7 @@ public class ArrayOperations {
         if (pos < 0 || pos >= values.length) {
             return;
         }
-        for (int i = pos; i < values.length; i++) {
+        for (int i = pos; i < values.length - 1; i++) {
             values[i] = values[i+1];
         }
         values[values.length-1] = 0;
@@ -24,14 +24,13 @@ public class ArrayOperations {
         if (pos < 0 || pos >= values.length) {
             return;
         }
-        int[] result = new int[values.length+1];
-        for (int i = 0; i < pos; i++) {
-            result[i] = values[i];
+        // 从后向前移动元素，为新元素腾出位置
+        // 循环从最后一个元素开始，移动到 pos 的后一个位置
+        for (int i = values.length - 1; i > pos; i--) {
+            values[i] = values[i - 1];
         }
-        for (int i = pos; i < values.length; i++) {
-            result[i+1] = values[i];
-        }
-        result[pos] = newInt;
+        // 在指定位置插入新元素
+        values[pos] = newInt;
     }
 
     /** 

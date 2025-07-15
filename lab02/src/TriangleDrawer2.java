@@ -5,9 +5,7 @@ public class TriangleDrawer2 {
             for(int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
-            if(i != SIZE - 1) {
-                System.out.println();
-            }
+            System.out.println();
         }
     }
 }

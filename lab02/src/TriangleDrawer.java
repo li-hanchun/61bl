@@ -10,9 +10,7 @@ public class TriangleDrawer {
                 System.out.print("*");
                 j += 1;
             }
-            if(i != SIZE - 1){
-                System.out.println();
-            }
+            System.out.println();
             i += 1;
         }
     }
